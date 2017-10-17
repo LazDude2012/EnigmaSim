@@ -1,0 +1,17 @@
+C:\Users\Alex\Documents\Visual Studio 2010\Projects\EnigmaSim\WpfApplication2\obj\x86\Debug\WpfApplication2.csprojResolveAssemblyReference.cache
+C:\Users\Alex\Documents\Visual Studio 2010\Projects\EnigmaSim\WpfApplication2\obj\x86\Debug\MainWindow.baml
+C:\Users\Alex\Documents\Visual Studio 2010\Projects\EnigmaSim\WpfApplication2\obj\x86\Debug\RotorSelect.baml
+C:\Users\Alex\Documents\Visual Studio 2010\Projects\EnigmaSim\WpfApplication2\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Alex\Documents\Visual Studio 2010\Projects\EnigmaSim\WpfApplication2\obj\x86\Debug\RotorSelect.g.cs
+C:\Users\Alex\Documents\Visual Studio 2010\Projects\EnigmaSim\WpfApplication2\obj\x86\Debug\App.g.cs
+C:\Users\Alex\Documents\Visual Studio 2010\Projects\EnigmaSim\WpfApplication2\obj\x86\Debug\WpfApplication2_MarkupCompile.cache
+C:\Users\Alex\Documents\Visual Studio 2010\Projects\EnigmaSim\WpfApplication2\obj\x86\Debug\WpfApplication2.g.resources
+C:\Users\Alex\Documents\Visual Studio 2010\Projects\EnigmaSim\WpfApplication2\obj\x86\Debug\WpfApplication2.Properties.Resources.resources
+C:\Users\Alex\Documents\Visual Studio 2010\Projects\EnigmaSim\WpfApplication2\obj\x86\Debug\WpfApplication2.csproj.GenerateResource.Cache
+C:\Users\Alex\Documents\Visual Studio 2010\Projects\EnigmaSim\WpfApplication2\bin\Debug\WpfApplication2.exe
+C:\Users\Alex\Documents\Visual Studio 2010\Projects\EnigmaSim\WpfApplication2\bin\Debug\WpfApplication2.pdb
+C:\Users\Alex\Documents\Visual Studio 2010\Projects\EnigmaSim\WpfApplication2\obj\x86\Debug\WpfApplication2.exe
+C:\Users\Alex\Documents\Visual Studio 2010\Projects\EnigmaSim\WpfApplication2\obj\x86\Debug\WpfApplication2.pdb
+C:\Users\Alex\documents\visual studio 2010\Projects\EnigmaSim\WpfApplication2\obj\x86\Debug\App.baml
+C:\Users\Alex\documents\visual studio 2010\Projects\EnigmaSim\WpfApplication2\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Alex\documents\visual studio 2010\Projects\EnigmaSim\WpfApplication2\obj\x86\Debug\WpfApplication2_MarkupCompile.lref

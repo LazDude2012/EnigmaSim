@@ -1,0 +1,30 @@
+﻿<Application x:Class="LazDude2012.EnigmaSim.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:LazDude2012.EnigmaSim"
+             StartupUri="MainWindow.xaml">
+    <!-- These are the combo box lists for the Rotor Select dialog. They are data bound there. -->
+    <Application.Resources>
+        <x:ArrayExtension x:Key="Rotors1" Type="local:ComboBoxString">
+            <local:ComboBoxString ValueString="Rotor I" />
+            <local:ComboBoxString ValueString="Rotor II"/>
+            <local:ComboBoxString ValueString="Rotor III"/>
+            <local:ComboBoxString ValueString="Rotor IV"/>
+            <local:ComboBoxString ValueString="Rotor V"/>
+        </x:ArrayExtension>
+        <x:ArrayExtension x:Key="Rotors2" Type="local:ComboBoxString">
+            <local:ComboBoxString ValueString="Rotor I" />
+            <local:ComboBoxString ValueString="Rotor II"/>
+            <local:ComboBoxString ValueString="Rotor III"/>
+            <local:ComboBoxString ValueString="Rotor IV"/>
+            <local:ComboBoxString ValueString="Rotor V"/>
+        </x:ArrayExtension>
+        <x:ArrayExtension x:Key="Rotors3" Type="local:ComboBoxString">
+            <local:ComboBoxString ValueString="Rotor I" />
+            <local:ComboBoxString ValueString="Rotor II"/>
+            <local:ComboBoxString ValueString="Rotor III"/>
+            <local:ComboBoxString ValueString="Rotor IV"/>
+            <local:ComboBoxString ValueString="Rotor V"/>
+        </x:ArrayExtension>
+    </Application.Resources>
+</Application>

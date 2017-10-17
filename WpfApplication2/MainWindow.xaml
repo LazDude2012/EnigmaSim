@@ -1,0 +1,56 @@
+﻿<!--
+    LazDude's EnigmaSim, (c) 2012 Alex Fischer.
+    MainWindow XAML presentation.
+-->    
+    
+<!-- This top element is the window itself. It registers itself with the EnigmaSim class, and then registers several events with the corresponding methods in the code. -->    
+    <Window x:Class="LazDude2012.EnigmaSim.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="LazDude's EnigmaSim 1.42" Height="474" Width="795" Name="EnigmaSim" ResizeMode="CanMinimize" KeyDown="EnigmaSim_KeyDown" Closed="EnigmaSim_Closed">
+    <!-- Grid elements hold other elements. Plain and simple. -->
+        <Grid Background="#FFC4C4C4">
+            
+            <!-- These three labels are the indicators on the rotors. Data binding is used to get the text from the Enigma class and display it. -->
+        <Label Content="{Binding Path=CentreLabel}" Height="58" HorizontalAlignment="Left" Margin="125,50,0,0" Name="lblCentreRotor" VerticalAlignment="Top" Width="63" Background="White" BorderBrush="#FF0D0D0D" BorderThickness="2" FontFamily="Times New Roman" FontSize="40" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <Label Content="{Binding Path=LeftLabel}" Height="58" HorizontalAlignment="Left" Margin="56,50,0,0" Name="lblLeftRotor" VerticalAlignment="Top" Width="63" Background="White" BorderBrush="Black" BorderThickness="2" FontWeight="Bold" FontStyle="Normal" FontSize="40" FontFamily="Times New Roman" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" />
+        <Label Content="{Binding Path=RightLabel}" Height="58" Margin="194,50,0,0" Name="lblRightRotor" VerticalAlignment="Top" Background="White" BorderBrush="Black" BorderThickness="2" FontFamily="Times New Roman" FontSize="40" FontWeight="Bold" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" HorizontalAlignment="Left" Width="63" />
+            <!-- These are the "Increase" and "Decrease" buttons. All the do is call the appropriate methods when they're clicked. -->
+        <Button Content="Increase" Height="32" HorizontalAlignment="Left" Margin="125,12,0,0" Name="increaseCentre" VerticalAlignment="Top" Width="63" Click="increaseCentre_Click" />
+        <Button Content="Increase" Height="32" HorizontalAlignment="Left" Margin="56,12,0,0" VerticalAlignment="Top" Width="63" Name="increaseLeft" Click="increaseLeft_Click" />
+        <Button Content="Increase" Height="32" HorizontalAlignment="Left" Margin="194,12,0,0" Name="increaseRight" VerticalAlignment="Top" Width="63" Click="increaseRight_Click" />
+        <Button Content="Decrease" Height="32" HorizontalAlignment="Left" Margin="56,114,0,0" Name="decreaseLeft" VerticalAlignment="Top" Width="63" Click="decreaseLeft_Click" />
+        <Button Content="Decrease" Height="32" HorizontalAlignment="Left" Margin="125,114,0,0" Name="decreaseCentre" VerticalAlignment="Top" Width="63" Click="decreaseCentre_Click" />
+        <Button Content="Decrease" Height="32" HorizontalAlignment="Left" Margin="194,114,0,0" Name="decreaseRight" VerticalAlignment="Top" Width="63" Click="decreaseRight_Click" />
+            <!-- This TextBlock is the label on the application that says "EnigmaSim 1.42 by Alex Fischer". -->
+        <TextBlock Height="207" HorizontalAlignment="Left" Margin="43,216,0,0" Name="TextBlock1" Text="EngimaSim 1.42 by Alex Fischer" VerticalAlignment="Top" Width="230" FontSize="22" TextWrapping="WrapWithOverflow" TextAlignment="Center" />
+            <!-- These two TextBoxes hold the plaintext message and encrypted message, respectively. -->
+        <TextBox Height="154" HorizontalAlignment="Right" Margin="0,12,12,0" Name="txtboxPlaintext" VerticalAlignment="Top" Width="482" IsReadOnly="True" IsEnabled="True" Visibility="Visible" TextWrapping="Wrap" />
+        <TextBox Height="180" HorizontalAlignment="Right" Margin="0,243,12,0" Name="txtboxCiphertext" VerticalAlignment="Top" Width="482" IsReadOnly="True" Visibility="Visible" TextWrapping="Wrap" />
+            <!-- These two TextBlocks are the labels on the above TextBoxes. -->
+        <TextBlock Height="33" HorizontalAlignment="Right" Margin="0,173,278,0" Name="lblPlaintext" Text="Plain Text Above" VerticalAlignment="Top" Width="216" FontSize="24" TextAlignment="Center" Visibility="Visible" />
+        <TextBlock FontSize="24" Height="37" HorizontalAlignment="Right" Margin="0,200,12,0" Name="lblCiphertext" Text="Ciphertext Below" TextAlignment="Center" VerticalAlignment="Top" Width="216" Visibility="Visible" />
+            <!-- The Border element provides the grey frame around the TextBlock, which is the indicator light, showing the last encrypted letter. -->    
+        <Border Height="97" Width="103" BorderThickness="2" BorderBrush="#FF898989" HorizontalAlignment="Left" Margin="104,267,0,0" Name="IndicatorFrame">
+            <TextBlock Height="93" HorizontalAlignment="Left" Margin="0,0,0,0" Name="indicatorLight" Text="" VerticalAlignment="Top" Width="99" Background="Black" Foreground="#FFF5EB87" TextAlignment="Center" FontSize="72" FontFamily="Times New Roman" FontWeight="Bold" />
+        </Border>
+            <!-- This button is the Rotors button. Buttons cannot display text sideways, so I got creative. -->
+        <Button Height="134" HorizontalAlignment="Left" Margin="12,12,0,0" Name="Button7" VerticalAlignment="Top" Width="38" Click="Button7_Click"></Button>
+            <!-- This TextBlock is the text that says "Rotors..." on the Button. It's rotated 270 degrees clockwise, (or 90 anti-clockwise) so it appears sideways. -->
+            <TextBlock Margin="19,114,682,297" FontSize="18" MouseDown="RotorsLabel_Click">
+                <TextBlock.RenderTransform>
+                    <RotateTransform Angle="270" />
+                </TextBlock.RenderTransform>
+                Rotors...
+           </TextBlock>
+            <!-- This TextBlock is the label above the indicator lamp. -->
+        <TextBlock Height="23" HorizontalAlignment="Left" Margin="125,276,0,0" Name="textBlock4" Text="Indicator" VerticalAlignment="Top" Width="63" TextAlignment="Center" FontWeight="Normal" />
+            <!-- These three TextBlocks are the labels underneath the rotors, showing which rotor is in each slot. -->
+        <TextBlock Text="Rotor III" Height="28" HorizontalAlignment="Left" Margin="194,152,0,0" Name="rightIndicator" VerticalAlignment="Top" Width="63" />
+        <TextBlock Text="Rotor II" Height="28" HorizontalAlignment="Left" Margin="125,152,0,0" Name="centreIndicator" VerticalAlignment="Top" Width="63" />
+        <TextBlock Text="Rotor I" Height="28" HorizontalAlignment="Left" Margin="56,152,0,0" Name="leftIndicator" VerticalAlignment="Top" Width="63" />
+            <!-- This Button is the "Reset Simulation" button. All it does is call the appropriate method in MainWindow.xaml.cs. -->
+        <Button Content="Reset Simulation" Height="33" HorizontalAlignment="Left" Margin="56,177,0,0" Name="button1" VerticalAlignment="Top" Width="201" Click="button1_Click" />
+    </Grid>
+</Window>
+

@@ -1,0 +1,28 @@
+﻿<!--     
+    LazDude's EnigmaSim, (c) 2012 Alex Fischer.
+    RotorSelect XAML presentation.
+-->
+    <Window x:Class="LazDude2012.EnigmaSim.RotorSelect"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Rotor Select..." Height="451" Width="346">
+    <!-- As in the MainWindow, the Grid simply hold other elements. -->
+    <Grid Background="#FFDBDBDB">
+        <!-- 
+        These three ComboBoxes are the drop down lists where the user selects their rotor combination. 
+        The values are "data bound" to the x:Arrays in App.xaml, so those values are what's displayed in the drop down list.
+        The other data bindings are to the "Rotors" class, which stores the currently selected value as a property.
+        -->
+        <ComboBox Height="63" HorizontalAlignment="Left" Margin="110,46,0,0" Name="comboBox1" VerticalAlignment="Top" Width="178" ItemsSource="{StaticResource ResourceKey=Rotors1}" DisplayMemberPath="ValueString" SelectedValuePath="ValueString" SelectedValue="{Binding Left}" IsSynchronizedWithCurrentItem="True" FontSize="26" VerticalContentAlignment="Center" />
+        <ComboBox Height="63" HorizontalAlignment="Left" Margin="110,143,0,0" Name="comboBox2" VerticalAlignment="Top" Width="178" ItemsSource="{StaticResource ResourceKey=Rotors2}" DisplayMemberPath="ValueString" SelectedValuePath="ValueString" SelectedValue="{Binding Centre}" IsSynchronizedWithCurrentItem="True" VerticalContentAlignment="Center" FontSize="26" />
+        <ComboBox Height="63" HorizontalAlignment="Left" Margin="110,251,0,0" Name="comboBox3" VerticalAlignment="Top" Width="178" ItemsSource="{StaticResource ResourceKey=Rotors3}" DisplayMemberPath="ValueString" SelectedValuePath="ValueString" SelectedValue="{Binding Right}" IsSynchronizedWithCurrentItem="True" FontSize="26" VerticalContentAlignment="Center" />
+        <!-- These labels are just that, labels. The first one is the one on top of the dialog, and the other three are next to the drop down lists. -->
+        <Label Content="Rotor Select..." Height="40" HorizontalAlignment="Left" Margin="49,0,0,0" Name="label1" VerticalAlignment="Top" Width="239" FontSize="28" HorizontalContentAlignment="Center" VerticalContentAlignment="Bottom" />
+        <Label Content="LEFT" Height="63" HorizontalAlignment="Left" Margin="12,46,0,0" Name="label2" VerticalAlignment="Top" Width="84" FontSize="24" VerticalContentAlignment="Center" HorizontalContentAlignment="Right" />
+        <Label Content="CENTRE" FontSize="24" Height="63" HorizontalAlignment="Left" HorizontalContentAlignment="Right" Margin="0,143,0,0" Name="label3" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="96" />
+        <Label Content="RIGHT" FontSize="24" Height="63" HorizontalAlignment="Left" HorizontalContentAlignment="Right" Margin="12,251,0,0" Name="label4" VerticalAlignment="Top" VerticalContentAlignment="Center" Width="84" />
+        <!-- These are the Confirm and Cancel buttons. They do exactly what they say. -->
+        <Button Content="Confirm" Height="42" HorizontalAlignment="Left" Margin="12,358,0,0" Name="button1" VerticalAlignment="Top" Width="122" Click="button1_Click" />
+        <Button Content="Cancel" Height="42" HorizontalAlignment="Left" Margin="190,358,0,0" Name="button2" VerticalAlignment="Top" Width="122" Click="button2_Click" />
+    </Grid>
+</Window>
