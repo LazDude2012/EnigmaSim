@@ -15,3 +15,20 @@ C:\Users\Alex\Documents\Visual Studio 2010\Projects\EnigmaSim\WpfApplication2\ob
 C:\Users\Alex\Documents\Visual Studio 2010\Projects\EnigmaSim\WpfApplication2\obj\x86\Debug\EnigmaSim.csproj.GenerateResource.Cache
 C:\Users\Alex\Documents\Visual Studio 2010\Projects\EnigmaSim\WpfApplication2\obj\x86\Debug\WpfApplication2.exe
 C:\Users\Alex\Documents\Visual Studio 2010\Projects\EnigmaSim\WpfApplication2\obj\x86\Debug\WpfApplication2.pdb
+C:\Users\lazdu\Source\Repos\EnigmaSim\WpfApplication2\obj\x86\Debug\WpfApplication2.exe
+C:\Users\lazdu\Source\Repos\EnigmaSim\WpfApplication2\obj\x86\Debug\WpfApplication2.pdb
+C:\Users\lazdu\Source\Repos\EnigmaSim\WpfApplication2\bin\Debug\WpfApplication2.exe
+C:\Users\lazdu\Source\Repos\EnigmaSim\WpfApplication2\bin\Debug\WpfApplication2.pdb
+C:\Users\lazdu\Source\Repos\EnigmaSim\WpfApplication2\obj\x86\Debug\EnigmaSim.csprojResolveAssemblyReference.cache
+C:\Users\lazdu\Source\Repos\EnigmaSim\WpfApplication2\obj\x86\Debug\MainWindow.baml
+C:\Users\lazdu\Source\Repos\EnigmaSim\WpfApplication2\obj\x86\Debug\RotorSelect.baml
+C:\Users\lazdu\Source\Repos\EnigmaSim\WpfApplication2\obj\x86\Debug\MainWindow.g.cs
+C:\Users\lazdu\Source\Repos\EnigmaSim\WpfApplication2\obj\x86\Debug\RotorSelect.g.cs
+C:\Users\lazdu\Source\Repos\EnigmaSim\WpfApplication2\obj\x86\Debug\App.g.cs
+C:\Users\lazdu\Source\Repos\EnigmaSim\WpfApplication2\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\lazdu\Source\Repos\EnigmaSim\WpfApplication2\obj\x86\Debug\WpfApplication2_MarkupCompile.cache
+C:\Users\lazdu\Source\Repos\EnigmaSim\WpfApplication2\obj\x86\Debug\WpfApplication2_MarkupCompile.lref
+C:\Users\lazdu\Source\Repos\EnigmaSim\WpfApplication2\obj\x86\Debug\App.baml
+C:\Users\lazdu\Source\Repos\EnigmaSim\WpfApplication2\obj\x86\Debug\WpfApplication2.g.resources
+C:\Users\lazdu\Source\Repos\EnigmaSim\WpfApplication2\obj\x86\Debug\WpfApplication2.Properties.Resources.resources
+C:\Users\lazdu\Source\Repos\EnigmaSim\WpfApplication2\obj\x86\Debug\EnigmaSim.csproj.GenerateResource.Cache

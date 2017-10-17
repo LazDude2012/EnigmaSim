@@ -33,6 +33,7 @@ namespace LazDude2012.EnigmaSim
         public Enigma enigma1;
         // Creates the rotor selection dialog box, but doesn't show it.
         RotorSelect rtrPicker = new RotorSelect();
+        int keypresses = 0;
 
         // This method is called whenever an instance of the MainWindow class is created.
         public MainWindow()
@@ -85,6 +86,8 @@ namespace LazDude2012.EnigmaSim
         //This method intercepts any key presses made while the EnigmaSim window has focus.
         private void EnigmaSim_KeyDown(object sender, KeyEventArgs e)
         {
+            //Number of characters encoded; used for formatting.
+            ++keypresses;
             //Gets the key's name as text.
             string key = e.Key.ToString();
             
@@ -109,9 +112,17 @@ namespace LazDude2012.EnigmaSim
             //This is here because there are more keys on the keyboard than just alphabet keys. It keeps the display from being messy.
             if (endtext != null)
             {
+                //Number of characters encoded; used for formatting.
+                ++keypresses;
                 //Put the letter that was typed in the top text box, and the encrypted letter in the bottom one.
                 txtboxPlaintext.AppendText(key);
                 txtboxCiphertext.AppendText(endtext);
+                //If the number of keys encoded is divisible by 5, add a space for formatting.
+                if(keypresses % 5 == 0)
+                {
+                    txtboxPlaintext.AppendText(" ");
+                    txtboxCiphertext.AppendText(" ");
+                }
             }
         }
 
@@ -169,5 +180,6 @@ namespace LazDude2012.EnigmaSim
             txtboxPlaintext.Clear();
             txtboxCiphertext.Clear();
         }
+
     }
 }

@@ -25,7 +25,7 @@
             <!-- This TextBlock is the label on the application that says "EnigmaSim 1.42 by Alex Fischer". -->
         <TextBlock Height="207" HorizontalAlignment="Left" Margin="43,216,0,0" Name="TextBlock1" Text="EngimaSim 1.42 by Alex Fischer" VerticalAlignment="Top" Width="230" FontSize="22" TextWrapping="WrapWithOverflow" TextAlignment="Center" />
             <!-- These two TextBoxes hold the plaintext message and encrypted message, respectively. -->
-        <TextBox Height="154" HorizontalAlignment="Right" Margin="0,12,12,0" Name="txtboxPlaintext" VerticalAlignment="Top" Width="482" IsReadOnly="True" IsEnabled="True" Visibility="Visible" TextWrapping="Wrap" />
+        <TextBox Height="154" HorizontalAlignment="Right" Margin="0,12,12,0" Name="txtboxPlaintext" VerticalAlignment="Top" Width="482" IsEnabled="True" Visibility="Visible" TextWrapping="Wrap" IsReadOnly="True" />
         <TextBox Height="180" HorizontalAlignment="Right" Margin="0,243,12,0" Name="txtboxCiphertext" VerticalAlignment="Top" Width="482" IsReadOnly="True" Visibility="Visible" TextWrapping="Wrap" />
             <!-- These two TextBlocks are the labels on the above TextBoxes. -->
         <TextBlock Height="33" HorizontalAlignment="Right" Margin="0,173,278,0" Name="lblPlaintext" Text="Plain Text Above" VerticalAlignment="Top" Width="216" FontSize="24" TextAlignment="Center" Visibility="Visible" />
